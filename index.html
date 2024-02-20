@@ -181,7 +181,7 @@
                     <button class="float-end bg-[#0307121A] px-10 py-3 text-4xl rounded-xl my-8"><i class="fas fa-compass"></i></button>
                     <div class="all-sets flex flex-col lg:flex-row mt-32 gap-20">
                         <!-- buss left side site -->
-                        <div class="left-all-set grid grid-cols-3 gap-5">
+                        <div class="left-all-set grid grid-cols-3 gap-5 w-3/5">
                             <button>A</button>
                             <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A1</button>
                             <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A2</button>
@@ -238,11 +238,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="buss-sets-right"></div>
+                <!-- buss sets right part -->
+                <div class="buss-sets-right w-2/5">
+                    <h2 class="text-[#030712] font-semibold text-2xl font-raleway pb-5 border-dashed border-b-2 border-[#dddddd]">Select Your Seat</h2>
+                    <div class="sets-price">
+                        <div class=" bg-[#F7F8F8] mt-5 rounded-xl px-6">
+                            <table class="table">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th class="text-[#030712] font-inter font-medium text-base ">Sets<span id="set-quentity" class="bg-[#1DD100] text-[#FFFFFF] px-1 ml-1 rounded-sm">0</span></th>
+                                  <th class="text-[#030712] font-inter font-medium text-base ">Class</th>
+                                  <th class="text-[#030712] font-inter font-medium text-base ">Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                  <td>C2</td>
+                                  <td>economy</td>
+                                  <td>550</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                  <td>C2</td>
+                                  <td>economy</td>
+                                  <td>550</td>
+                                </tr>
+                              </tbody>
+                              <!-- table footer -->
+                              <tfoot>
+                                <tr class="border-t-2 border-[#03071233]">
+                                    <td colspan="2" class="text-[#030712] font-inter font-medium text-base ">Total Price</td>
+                                    <td class="text-[#030712] font-inter font-medium text-base ">BDT <span id="total-price">1100</span></td>
+                                </tr>
+                              </tfoot>
+                            </table>
+                            <div class="coupon-area relative">
+                                <input type="text" class="w-full p-5 rounded-xl" placeholder="Have any coupon?">
+                              <button class="bg-[#1DD100] text-[#FFFFFF] font-inter font-semibold text-base px-5 py-3 rounded-xl absolute right-2 top-2">Apply</button>
+                            </div>
+                            <div class="grand-total flex flex-row justify-between py-5 px-3">
+                                <h4 class="text-[#030712] font-inter font-medium text-base ">Grand Total</h4>
+                                <h4 class="text-[#030712] font-inter font-medium text-base ">BDT <span>1100</span></h4>
+                            </div>
+                        </div>
+                            <form action="" class="ml-5 mt-8">
+                                <label class="font-inter font-semibold text-base text-[#030712]" for="pName">Passenger Name*</label><br><br>
+                                <input class="border-[#0307121A] px-5 py-3 border-2 rounded-xl w-full" type="text" id="pName" class="" placeholder="Enter your name"><br><br>
+                                <label class="font-inter font-semibold text-base text-[#030712]" for="phone">Phone*</label><br><br>
+
+                                <input class="border-[#0307121A] px-5 py-3 border-2 rounded-xl w-full" type="number" id="phone" placeholder="Enter your number"><br><br>
+                    
+                                <label class="font-inter font-semibold text-base text-[#030712]" for="email">Email*</label><br><br>
+                                <input class="border-[#0307121A] px-5 py-3 border-2 rounded-xl w-full" type="email" id="email" placeholder="Enter your email"><br><br>
+
+                                <button class="bg-[#1DD100] text-[#FFFFFF] w-full text-center py-3 rounded-xl font-raleway font-extrabold text-xl" id="next">Next</button>
+                            </form>
+                          <!-- End form part -->
+                            <div class="terms-and-condition mt-10 flex flex-row justify-between">
+                                <a href="#" class="font-inter text-base font-normal text-[#03071299] underline"> Terms and Condition</a>
+                                <a href="#" class="font-inter text-base font-normal text-[#03071299] underline">Cancellation Policy</a>
+                            </div>
+                    </div>
+                </div>
             </div>
            
         </section>
+        <!-- End buss sets area -->
     </main>
+    <!-- end main part -->
+    <footer>
+        <div class="footer-wraper">
+            <!-- top footer area -->
+            <div class="top-footer">
+                <div class="top-footer-left"></div>
+                <div class="top-footer-right"></div>
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer"></div>
+        </div>
+    </footer>
 
     <!-- font awesome icons script -->
     <script src="https://kit.fontawesome.com/df8b5614cd.js" crossorigin="anonymous"></script>
