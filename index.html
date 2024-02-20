@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#F7F8F8]">
     <header id="header" class="px-10 py-5 lg:px-24 lg:py-10">
         <!-- navbar and logo part -->
         <div id="navbar-and-logo">
@@ -166,8 +166,85 @@
                 </div>
             </div>
         </section>
+        <!-- End departure section -->
+        <!-- Start buss sets section -->
+        <section id="buss-sets" class="mx-10 my-5 lg:mx-24 lg:my-14  bg-[#FFFFFF] p-8 rounded-2xl">
+            <div class="buss-sets-inner flex flex-col lg:flex-row gap-5">
+                <div class="buss-sets-left flex-1 border-r-2 border-[#dddddd] border-dashed pr-8">
+                    <h2 class="text-[#030712] font-semibold text-2xl font-raleway pb-5 border-dashed border-b-2 border-[#dddddd]">Select Your Seat</h2>
+                    <div class="flex flex-row items-center justify-between py-5 border-dashed border-b-2 border-[#dddddd]">
+                        <p class="flex flex-row gap-2  font-inter font-medium text-lg text-[#03071280]"><span><img src="images/seat-gray.png" alt="about empty sets"></span>Available</p>
+
+                        <p class="flex flex-row gap-2 font-inter font-medium text-lg text-[#1DD100]"><span><img src="images/seat-green-filled.png" alt="about selected sets images"></span>Selected</p>
+                    </div>
+                    <!-- buss staring button -->
+                    <button class="float-end bg-[#0307121A] px-10 py-3 text-4xl rounded-xl my-8"><i class="fas fa-compass"></i></button>
+                    <div class="all-sets flex flex-col lg:flex-row mt-32 gap-20">
+                        <!-- buss left side site -->
+                        <div class="left-all-set grid grid-cols-3 gap-5">
+                            <button>A</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A2</button>
+                            <button>B</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">B1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">B2</button>
+                            <button>C</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">C1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">C2</button>
+                            <button>D</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">D1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">D2</button>
+                            <button>E</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">E1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">E2</button>
+                            <button>F</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">F1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">F2</button>
+                            <button>G</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">G1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">G2</button>
+                            <button>H</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">H1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">H2</button>
+                            <button>I</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">I1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">I2</button>
+                            <button>J</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">J1</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">J2</button>
+                        </div>
+                        <!-- buss right side sets -->
+                        <div class="right-all-set grid grid-cols-2 gap-5">
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">A4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">B3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">B4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">C3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">C4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">D3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">D4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">E3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">E4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">F3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">F4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">G3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">G4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">H3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">H4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">I3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">I4</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">J3</button>
+                            <button class="bg-[#F7F8F8] text-lg font-inter font-medium text-[#03071280] px-8 py-3 rounded-xl">J4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buss-sets-right"></div>
+            </div>
+           
+        </section>
     </main>
 
-    
+    <!-- font awesome icons script -->
+    <script src="https://kit.fontawesome.com/df8b5614cd.js" crossorigin="anonymous"></script>
 </body>
 </html>
