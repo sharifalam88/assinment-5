@@ -15,12 +15,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F7F8F8]">
-    <header id="header" class="px-10 py-5 lg:px-24 lg:py-10">
+    <header id="header" class="p-5 lg:px-24 lg:py-10">
         <!-- navbar and logo part -->
         <div id="navbar-and-logo">
             <div class="navbar flex flex-col lg:flex-row items-center justify-between">
-                <div class="navbar-start">
-                  <a class="font-raleway font-extrabold text-3xl">HeroBus Ticket</a>
+                <div class="navbar-center lg:navbar-start">
+                  <a class="font-raleway font-extrabold text-4xl lg:text-3xl">HeroBus Ticket</a>
                 </div>
                 <div class="navbar-center">
                   <ul class="menu menu-horizontal px-2 font-raleway text-lg font-medium flex flex-col lg:flex-row text-[#03070CB3]">
@@ -30,7 +30,7 @@
                     <li><a>Search</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-center lg:navbar-end">
                   <a class="btn text-[#1DD100] font-raleway font-bold text-lg bg-[#E8FAE5]">Bus<span><img src="images/bus-icon.png" alt=""></span></a>
                 </div>
               </div>
@@ -38,9 +38,9 @@
         <!-- header banner part -->
         <div id="header-banner" class=" bg-[url(images/banner.png)] bg-no-repeat bg-center rounded-2xl pt-20 pb-40">
             <div class="banner-inner text-center rounded-2xl ">
-                <h1 class="font-raleway font-extrabold text-6xl text-[white] pb-8">End-to-End Travel with<br><span class="text-[#1DD100] "> Hero Buss service</span></h1>
-                <p class="font-inter font-normal text-lg text-[#ffffff] mb-8">Yes, you can travel Hero Buss.Because it's very nice looking and it has modern facilities available. So, <br>if you are interested to travel any where than you can select our hero buss service.</p>
-                <button class="bg-[#1DD100] text-[#030712] py-3 px-5 rounded-xl font-raleway font-bold text-xl">Buy Tickets</button>
+                <h1 class="font-raleway text-[white] pb-8 font-medium text-2xl lg:font-extrabold lg:text-6xl ">End-to-End Travel with<br><span class="text-[#1DD100] "> Hero Buss service</span></h1>
+                <p class="font-inter font-normal text-[#ffffff] mb-8 text-sm lg:text-lg">Yes, you can travel Hero Buss.Because it's very nice looking and it has modern facilities available. So, <br>if you are interested to travel any where than you can select our hero buss service.</p>
+                <button id="banner-btn" class="bg-[#1DD100] text-[#030712] py-3 px-5 rounded-xl font-raleway font-bold text-xl">Buy Tickets</button>
             </div>
         </div>
     </header>
