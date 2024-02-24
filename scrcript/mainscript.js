@@ -1,7 +1,11 @@
 // page scroll function
 
 function scrollFunction() {
-    window.scrollTo(0, 1900);
+  window.scroll({
+    top: 1900,
+    behavior: "smooth",
+  });
+  
   }
 // Select buss sets
 
@@ -10,9 +14,8 @@ function scrollFunction() {
                 button.addEventListener('click', function(event){
                   const selectSet = event.target;
                     selectSet.classList.add('set-select');
+                    event.target.setAttribute('disabled', false);
 
-                    
-                  
                   // add dinamically table data
                   const table = document.getElementById('set-table');
                   const tableRo = document.createElement('tr');
@@ -67,7 +70,8 @@ function scrollFunction() {
                 const totalPrice = getValueById('total-price');
                 const couponRet = totalPrice * 0.15;
                 const finalGrandTotal = couponNew15 - couponRet;
-                
+
+              
                const initialValue = document.getElementById('grand-total');
                initialValue.innerText = finalGrandTotal;
                 
